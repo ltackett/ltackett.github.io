@@ -194,14 +194,14 @@
 /* Name.Entity */
 /* line 36, _sass/syntax.scss */
 .highlight .ne {
-  color: #990000;
+  color: #ff6400;
   font-weight: bold;
 }
 
 /* Name.Exception */
 /* line 37, _sass/syntax.scss */
 .highlight .nf {
-  color: #990000;
+  color: #ff6400;
   font-weight: bold;
 }
 
@@ -322,7 +322,7 @@
 /* Literal.String.Single */
 /* line 57, _sass/syntax.scss */
 .highlight .ss {
-  color: #990073;
+  color: #d8fa3c;
 }
 
 /* Literal.String.Symbol */
