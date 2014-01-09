@@ -104,11 +104,16 @@ h2:after, h3:after {
 }
 
 /* line 26, _sass/global/_basics.scss */
+img {
+  border: 2px solid #ffffff;
+}
+
+/* line 28, _sass/global/_basics.scss */
 .highlight {
   margin-bottom: 2.5em;
   overflow: hidden;
 }
-/* line 31, _sass/global/_basics.scss */
+/* line 33, _sass/global/_basics.scss */
 .highlight:before, .highlight:after {
   color: #e75d6a;
   display: block;
@@ -116,16 +121,16 @@ h2:after, h3:after {
   white-space: nowrap;
   content: '// ========================================================================================================================================================================';
 }
-/* line 33, _sass/global/_basics.scss */
+/* line 35, _sass/global/_basics.scss */
 .highlight:before {
   margin-bottom: 1.25em;
 }
-/* line 34, _sass/global/_basics.scss */
+/* line 36, _sass/global/_basics.scss */
 .highlight:after {
   margin-top: 1.25em;
 }
 
-/* line 37, _sass/global/_basics.scss */
+/* line 39, _sass/global/_basics.scss */
 section.main {
   margin-bottom: 3.75em;
 }

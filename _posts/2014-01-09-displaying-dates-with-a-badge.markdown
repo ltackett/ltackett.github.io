@@ -9,11 +9,11 @@ One of my recent client projects needed a cool, stylized calendar badge for disp
 
 Here's the calendar_badge with a ruby date object:
 
-![calendar_badge with date object](http://f.cl.ly/items/0v2z3I2U22290u1S2x0j/Screen%20Shot%202014-01-09%20at%202.12.41%20PM.png)
+![calendar_badge with date object](http://f.cl.ly/items/1h1I0b3w330s0x3Q3j3Z/Screen%20Shot%202014-01-09%20at%202.12.41%20PM.png)
 
 ... and without a ruby date object:
 
-![calendar_badge with date object](http://f.cl.ly/items/0J1b1j0t3d2u2y3b2z1q/Screen%20Shot%202014-01-09%20at%202.13.03%20PM.png)
+![calendar_badge with date object](http://f.cl.ly/items/3Y3d1b3j3w2F473G3I2k/Screen%20Shot%202014-01-09%20at%202.13.03%20PM.png)
 
 ### application_helper.rb
 
