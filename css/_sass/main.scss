@@ -1,0 +1,27 @@
+@import 'colors';
+
+@function blank-line($n) {
+  @return 1.25em * $n;
+}
+
+@mixin comment-line() {
+  color:       $comment-color;
+  display:     block;
+  overflow:    hidden;
+  white-space: nowrap;
+  content:     '// ========================================================================================================================================================================';
+}
+
+// Import Compass
+@import 'compass';
+@import 'compass/reset';
+
+// Fonts
+@font-face {
+  font-family: "VeraMono";
+  src: url('../fonts/VeraMono.ttf') format('truetype');
+}
+
+// Import everything else
+@import 'global/*';
+@import 'partials/*';

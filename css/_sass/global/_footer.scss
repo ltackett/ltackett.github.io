@@ -1,0 +1,18 @@
+footer {
+  a { color: $text-color; text-decoration: none; }
+  p { color: $tag-color;  margin-bottom: blank-line(1); }
+
+  dl {
+    overflow: hidden;
+
+    dt, dd { float: left; }
+
+    dt {
+      clear: left;
+      color: $entity-color;
+      width: 15ch;
+
+      &:after { content: ': ' }
+    }
+  }
+}

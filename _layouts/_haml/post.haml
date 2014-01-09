@@ -1,0 +1,11 @@
+\---
+layout: default
+\---
+
+.post
+  %h2
+    %span.name {{ page.title }}
+    %span.meta {{ page.date | date_to_string }}
+
+  .post-content {{ content }}
+  .comments {% include disqus.html %}

@@ -1,0 +1,23 @@
+.post {
+  h2 {
+    overflow:      hidden;
+    color:         $comment-color;
+    margin-bottom: 1.5em;
+
+    span.meta { float: right; }
+  }
+
+  p {
+    &             { margin-bottom: 1.25em; }
+    &:last-child  { margin-bottom: 0; }
+  }
+
+  ul { list-style: disc; }
+
+  ol { list-style: decimal; }
+
+  ul, ol {
+    list-style-position: inside;
+    margin-bottom: blank-line(1);
+  }
+}

@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title {{ site.name }} - {{ page.title }}
+    %meta{content: "width=device-width", name: "viewport"}/
+    / syntax highlighting CSS
+    %link{href: "/css/syntax.css", rel: "stylesheet"}/
+    / Custom CSS
+    %link{href: "/css/main.css", rel: "stylesheet"}/
+  %body
+    %header.site-header
+      %h1
+        %a{href: "/"} {{ site.name }}
+        %p.subheader C-x M-c M-butterfly
+
+      .about
+        %p This is where Lorin Tackett posts about front-end development crap.
+        %p and other crap too, sometimes.
+
+    %section.main{ role: "main" } {{ content }}
+
+    %footer
+      %h2 About the author:
+      %p I've been slinging front-end code three quarters of a decade. I've picked up a thing or two along the way. One of my recent discoveries is that I love sharing and teaching what I do.
+      %p I slapped this blog together in a few hours with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://haml.info/">Haml</a>, and <a href="http://sass-lang.com/">Sass</a>.
+      %p ... and it's totally forkable on <a href="https://github.com/ltackett/ltackett.github.io">GitHub</a>.
+
+      %dl.contact
+        %dt Website
+        %dd <a href="http://lorintackett.com/">lorintackett.com</a>
+        %dt on GitHub
+        %dd <a href="http://github.com/">github.com/ltackett</a>
+        %dt on Twitter
+        %dd <a href="http://twitter.com/">twitter.com/ltackett</a>

@@ -1,0 +1,31 @@
+header.site-header {
+  h1 {
+    display:        inline;
+    color:          $entity-color;
+
+    &:after{ color: $text-color; content: " )"; }
+
+    a {
+      text-decoration: none;
+      background:      transparent;
+      color:           $entity-color;
+
+      &:after  { color: $text-color; content: "("; }
+    }
+
+    p.subheader {
+      display: inline;
+      color:   $string-color;
+
+      &:before { content: "\"" }
+      &:after  { content: "\"" }
+    }
+  }
+
+  .about {
+    color: $comment-color;
+    margin: 1.25em 0;
+
+    p:before { content: "// " }
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  background:  $background-color;
+  color:       $text-color;
+  font-family: 'VeraMono', Monaco, Consolas, "Lucida Console", monospace, monospace;
+  font-size:   80%;
+  width:       80ch;
+  margin:      auto;
+  padding:     blank-line(3) 0 blank-line(3);
+  line-height: blank-line(1);
+}
+
+a {
+  color: $string-color;
+}
+
+h2, h3 {
+  color:         $comment-color;
+  margin-bottom: 1.5em;
+
+  &:before { content: '// ' }
+  &:after {
+    @include comment-line;
+  }
+}
+
+.highlight {
+  margin-bottom: blank-line(2);
+  overflow:      hidden;
+
+  &:before,
+  &:after { @include comment-line; }
+
+  &:before { margin-bottom: blank-line(1); }
+  &:after  { margin-top:    blank-line(1); }
+}
+
+section.main { margin-bottom: blank-line(3) }

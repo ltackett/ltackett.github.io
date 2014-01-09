@@ -1,0 +1,57 @@
+.popover {
+  .content { background-color: #F4F3EF; }
+
+  .inner {
+    position: absolute;
+    left:     -14px;
+    width:    295px;
+    padding:  0;
+
+    .heading {
+      @include linear-gradient($dark_gray_grad_top, $dark_gray_grad_bottom);
+      @include border-radius(5px 5px 0px 0px);
+      padding: 6px 15px 6px 30px;
+      height:  36px;
+
+      h3 {
+        color:          white;
+        font-weight:    normal;
+        text-transform: uppercase;
+        font-family:    'ProximaNova-Bold';
+        font-size:      18px;
+      }
+    }
+
+    .close-button {
+      @include border-radius(11px);
+      cursor:            pointer;
+      background-image:  none;
+      background-color:  #FFFFFF;
+      border:            1px solid #BEBEBE;
+
+      font-weight:       normal;
+      font-size:         14px;
+      font-family:       'ProximaNova-Regular';
+
+      position:          absolute;
+      right:             15px;
+      top:               13px;
+      width:             8px;
+      height:            12px;
+      line-height:       15px;
+      padding:           4px 7px 4px 5px;
+
+      // Conditional overrides
+      // ==============================================================================================================
+
+      &       { color: #FFFFFF; opacity: 0.7; }
+      &:hover { color: #BEBEBE; opacity: 1.0; text-decoration: none; }
+
+      // Modernizr fallbacks
+      // ==============================================================================================================
+
+      .boxshadow    & { @include box-shadow(#000 0 2px 5px); }
+      .no-boxshadow & { border: 3px solid #000; }
+    }
+  }
+}

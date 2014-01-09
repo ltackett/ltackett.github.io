@@ -1,0 +1,13 @@
+#blog-index {
+  span.date { color: $constant-color; }
+
+  span.hashrocket {
+    &:after { content: " => "; }
+  }
+
+  p { margin: blank-line(1) 0; }
+
+  li { margin-bottom: blank-line(1); }
+
+  li:not(:last-child):after { @include comment-line; margin-bottom: blank-line(1); }
+}

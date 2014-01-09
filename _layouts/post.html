@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class='post'>
+  <h2>
+    <span class='name'>{{ page.title }}</span>
+    <span class='meta'>{{ page.date | date_to_string }}</span>
+  </h2>
+  <div class='post-content'>{{ content }}</div>
+  <div class='comments'>{% include disqus.html %}</div>
+</div>
