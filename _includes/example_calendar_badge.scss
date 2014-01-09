@@ -1,0 +1,41 @@
+@mixin calendar-badge-size ($height) {
+  // Keep everything sized correctly
+  height:      $height;
+  width:       $height * 1.0625;
+  font-size:   $height * 0.4375;
+  line-height: $height * 1.3125;
+
+  &:before { font-size: $height; }
+}
+
+.calendar-badge {
+  @include calendar-badge-size(32px);
+  display:     inline-block;
+  position:    relative;
+  text-align:  center;
+  font-family: $primary-typeface-bold;
+
+  &:before {
+    font-family: 'iconfont';
+    text-align:  center;
+    position:    absolute;
+    top:         0;
+    left:        0;
+    right:       0;
+    line-height: 1em;
+  }
+
+  &:before     { @include iconfont-cal; }
+  &.jan:before { @include iconfont-cal-jan; }
+  &.feb:before { @include iconfont-cal-feb; }
+  &.mar:before { @include iconfont-cal-mar; }
+  &.apr:before { @include iconfont-cal-apr; }
+  &.may:before { @include iconfont-cal-may; }
+  &.jun:before { @include iconfont-cal-jun; }
+  &.jul:before { @include iconfont-cal-jul; }
+  &.aug:before { @include iconfont-cal-aug; }
+  &.sep:before { @include iconfont-cal-sep; }
+  &.oct:before { @include iconfont-cal-oct; }
+  &.nov:before { @include iconfont-cal-nov; }
+  &.dec:before { @include iconfont-cal-dec; }
+}
