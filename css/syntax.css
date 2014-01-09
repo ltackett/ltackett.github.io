@@ -125,6 +125,7 @@
 /* Keyword.Constant */
 /* line 25, _sass/syntax.scss */
 .highlight .kd {
+  color: #fbde2d;
   font-weight: bold;
 }
 
