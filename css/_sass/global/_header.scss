@@ -3,7 +3,7 @@ header.site-header {
     display:        inline;
     color:          $entity-color;
 
-    &:after{ color: $text-color; content: " )"; }
+    &:after{ color: $text-color; content: " );"; }
 
     a {
       text-decoration: none;
