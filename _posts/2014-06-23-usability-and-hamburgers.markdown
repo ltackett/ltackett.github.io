@@ -2,7 +2,7 @@
 layout:     post
 title:      "Usability and the time I ordered $100 worth of hamburgers."
 date:       2014-06-23 12:21:20
-categories: ux, usability, failboat
+categories: failboat
 ---
 
 Do you know what's awesome? Hamburgers. You know what's not awesome? Poorly thought-out checkout UX. Here's the story...
