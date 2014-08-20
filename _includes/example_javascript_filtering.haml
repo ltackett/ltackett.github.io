@@ -1,0 +1,8 @@
+%input.form-control{ data: { action: 'text-search' }, type: "text", placeholder: "Filter by name or location" }
+
+.contacts
+  - contacts.each do |contact|
+    .card{ data: { element: 'item' }}
+      %h4= contact.name
+      %p=  contact.address
+      %p=  contact.citystate

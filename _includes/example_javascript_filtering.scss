@@ -1,0 +1,46 @@
+@include 'compass';
+
+body { padding-top: 3em; }
+
+.form-control {
+  position: fixed;
+  top:      0;
+  left:     0;
+  right:    0;
+  width:    100%;
+  padding:  0.75em 0.5em;
+  z-index:  1;
+}
+
+.contacts {
+  position:  relative;
+  overflow:  hidden;
+  padding:   0.5%;
+
+  &       { font-size: 0; }
+  & .card { font-size: initial; }
+}
+
+.card {
+  @include border-radius(0.25em);
+  @include box-sizing(border-box);
+  display:    inline-block;
+  background: #333333;
+  color:      #ffffff;
+  margin:     0.5%;
+  padding:    2em;
+  width:      32.25%;
+
+  &[data-filtered=false] { display: none; }
+  &[data-filtered=true]  { display: inline-block; }
+
+  h4, p {
+    overflow:      hidden;
+    text-overflow: ellipsis;
+    white-space:   nowrap;
+    line-height:   1.25em;
+  }
+
+  h4 { margin: 0 0 0.5em; }
+  p  { margin: 0; }
+}
