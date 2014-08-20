@@ -2,7 +2,7 @@
 layout:     post
 title:      "Filtering Fun with JavaScript."
 date:       2014-08-20 14:21:42
-categories: failboat
+categories: code
 ---
 
 Ever been in a situation where you have already gathered your results from the server, but you need to do some arbitrary text searching on them? Here's a handy way to do it.
